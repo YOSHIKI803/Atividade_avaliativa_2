@@ -64,6 +64,7 @@ namespace SimuladorMedia.Formularios
                 if (e.KeyCode == Keys.Oemcomma || e.KeyCode == Keys.Decimal) verificarNumero = true;  //liberar a vírgula
                 if (e.KeyCode == Keys.Enter) verificarNumero = true; //liberar a tecla enter
                 if (e.KeyCode == Keys.Back) verificarNumero = true;  //Liberar a tecla back
+                if (e.KeyCode == Keys.Tab) verificarNumero = true;
 
                 int qtdVirgula = txtMediaFinalAluno.Text.Count(v => v == ',');  //contar vírgula
 
@@ -97,6 +98,7 @@ namespace SimuladorMedia.Formularios
                 if (e.KeyCode == Keys.Oemcomma || e.KeyCode == Keys.Decimal) verificarNumero = true;  //liberar a vírgula
                 if (e.KeyCode == Keys.Enter) verificarNumero = true; //liberar a tecla enter
                 if (e.KeyCode == Keys.Back) verificarNumero = true;  //Liberar a tecla back
+                if (e.KeyCode == Keys.Tab) verificarNumero = true;
 
                 int qtdVirgula = txtNotaExame.Text.Count(v => v == ',');  //contar vírgula
 
@@ -114,6 +116,11 @@ namespace SimuladorMedia.Formularios
                 MessageBox.Show("Muitas vírgulas", "ADS/JIPA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtNotaExame.Text = txtNotaExame.Text.Remove(txtNotaExame.Text.Length - 1);
             }
+        }
+
+        private void FormMediaFinal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
