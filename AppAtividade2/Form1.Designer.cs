@@ -90,11 +90,12 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 337);
+            this.label1.Location = new System.Drawing.Point(25, 314);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(752, 84);
+            this.label1.Size = new System.Drawing.Size(752, 101);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Autores do Projeto: \r\nAutor 1: \r\nAutor 2:";
+            this.label1.Text = "Autores do Projeto: \r\nAutor 1: Weslley Yoshiki Meguro\r\nAutor 2: Kauã Silva Abadia" +
+    "s\r\nAutor 3: Lucas José Pereira";
             // 
             // Form1
             // 

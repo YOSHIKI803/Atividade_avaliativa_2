@@ -30,7 +30,7 @@ namespace SimuladorMedia.Formularios
 
             if(MAEX >= 50)
             {
-                lbMenssagem.Text = $"{nome}, você foi aprovado(a)";
+                lbMenssagem.Text = $"{nome}, você foi aprovado(a), com {MAEX} pontos";
                 lbMenssagem.Visible = true;
             }
             else
@@ -64,6 +64,7 @@ namespace SimuladorMedia.Formularios
                 if (e.KeyCode == Keys.Oemcomma || e.KeyCode == Keys.Decimal) verificarNumero = true;  //liberar a vírgula
                 if (e.KeyCode == Keys.Enter) verificarNumero = true; //liberar a tecla enter
                 if (e.KeyCode == Keys.Back) verificarNumero = true;  //Liberar a tecla back
+                if (e.KeyCode == Keys.Tab) verificarNumero = true;
 
                 int qtdVirgula = txtMediaFinalAluno.Text.Count(v => v == ',');  //contar vírgula
 
@@ -97,6 +98,7 @@ namespace SimuladorMedia.Formularios
                 if (e.KeyCode == Keys.Oemcomma || e.KeyCode == Keys.Decimal) verificarNumero = true;  //liberar a vírgula
                 if (e.KeyCode == Keys.Enter) verificarNumero = true; //liberar a tecla enter
                 if (e.KeyCode == Keys.Back) verificarNumero = true;  //Liberar a tecla back
+                if (e.KeyCode == Keys.Tab) verificarNumero = true;
 
                 int qtdVirgula = txtNotaExame.Text.Count(v => v == ',');  //contar vírgula
 
@@ -115,5 +117,19 @@ namespace SimuladorMedia.Formularios
                 txtNotaExame.Text = txtNotaExame.Text.Remove(txtNotaExame.Text.Length - 1);
             }
         }
+
+        private void txtMediaFinalAluno_Leave(object sender, EventArgs e)
+        {
+            int nota = Convert.ToInt32(txtMediaFinalAluno.Text);
+            string nome = txtNomeAluno.Text;
+
+            if (nota >= 60)
+            {
+                MessageBox.Show($"O Aluno {nome}, já passou na matéria", "ADS/JIPA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMediaFinalAluno.Clear();
+            }
+        }
+
+     
     }
 }
