@@ -56,7 +56,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 56);
+            this.label2.Location = new System.Drawing.Point(168, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 5;
@@ -66,7 +66,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 117);
+            this.label3.Location = new System.Drawing.Point(148, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 16);
             this.label3.TabIndex = 6;
@@ -76,7 +76,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 172);
+            this.label4.Location = new System.Drawing.Point(148, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(154, 16);
             this.label4.TabIndex = 7;
@@ -86,17 +86,18 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 235);
+            this.label5.Location = new System.Drawing.Point(166, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Média do Aluno:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // lbMenssagem
             // 
             this.lbMenssagem.AutoSize = true;
             this.lbMenssagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenssagem.Location = new System.Drawing.Point(84, 335);
+            this.lbMenssagem.Location = new System.Drawing.Point(84, 348);
             this.lbMenssagem.Name = "lbMenssagem";
             this.lbMenssagem.Size = new System.Drawing.Size(110, 20);
             this.lbMenssagem.TabIndex = 9;
@@ -104,14 +105,14 @@
             // 
             // txtNomeAluno
             // 
-            this.txtNomeAluno.Location = new System.Drawing.Point(80, 75);
+            this.txtNomeAluno.Location = new System.Drawing.Point(151, 68);
             this.txtNomeAluno.Name = "txtNomeAluno";
             this.txtNomeAluno.Size = new System.Drawing.Size(151, 20);
             this.txtNomeAluno.TabIndex = 10;
             // 
             // txtNota1
             // 
-            this.txtNota1.Location = new System.Drawing.Point(80, 136);
+            this.txtNota1.Location = new System.Drawing.Point(151, 129);
             this.txtNota1.Name = "txtNota1";
             this.txtNota1.Size = new System.Drawing.Size(151, 20);
             this.txtNota1.TabIndex = 11;
@@ -120,26 +121,29 @@
             // 
             // txtNota2
             // 
-            this.txtNota2.Location = new System.Drawing.Point(80, 191);
+            this.txtNota2.Location = new System.Drawing.Point(151, 184);
             this.txtNota2.Name = "txtNota2";
             this.txtNota2.Size = new System.Drawing.Size(151, 20);
             this.txtNota2.TabIndex = 12;
             this.txtNota2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNota2_KeyUp);
+            this.txtNota2.Leave += new System.EventHandler(this.txtNota2_Leave);
             // 
             // txtMediaAluno
             // 
-            this.txtMediaAluno.Location = new System.Drawing.Point(80, 254);
+            this.txtMediaAluno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txtMediaAluno.Location = new System.Drawing.Point(151, 245);
             this.txtMediaAluno.Name = "txtMediaAluno";
             this.txtMediaAluno.Size = new System.Drawing.Size(151, 20);
             this.txtMediaAluno.TabIndex = 13;
+            this.txtMediaAluno.TextChanged += new System.EventHandler(this.txtMediaAluno_TextChanged);
             // 
             // btCalcular
             // 
             this.btCalcular.BackColor = System.Drawing.Color.Tan;
             this.btCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCalcular.Location = new System.Drawing.Point(105, 290);
+            this.btCalcular.Location = new System.Drawing.Point(105, 294);
             this.btCalcular.Name = "btCalcular";
-            this.btCalcular.Size = new System.Drawing.Size(97, 23);
+            this.btCalcular.Size = new System.Drawing.Size(97, 32);
             this.btCalcular.TabIndex = 14;
             this.btCalcular.Text = "CALCULAR";
             this.btCalcular.UseVisualStyleBackColor = false;
@@ -149,9 +153,9 @@
             // 
             this.btNovo.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNovo.Location = new System.Drawing.Point(260, 290);
+            this.btNovo.Location = new System.Drawing.Point(260, 294);
             this.btNovo.Name = "btNovo";
-            this.btNovo.Size = new System.Drawing.Size(97, 23);
+            this.btNovo.Size = new System.Drawing.Size(97, 32);
             this.btNovo.TabIndex = 15;
             this.btNovo.Text = "NOVO";
             this.btNovo.UseVisualStyleBackColor = false;

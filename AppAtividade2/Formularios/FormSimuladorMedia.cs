@@ -16,6 +16,8 @@ namespace SimuladorMedia.Formularios
         {
             InitializeComponent();
             lbMenssagem.Visible = false;
+            txtMediaAluno.Visible = false;
+            label5.Visible = false;
         }
 
         private void btCalcular_Click(object sender, EventArgs e)
@@ -40,6 +42,8 @@ namespace SimuladorMedia.Formularios
                 lbMenssagem.Text = $"{nome}, você não foi aprovado(a)";
                 lbMenssagem.Visible = true;
             }
+            txtMediaAluno.Visible = true;
+            label5.Visible = true;
 
         }
 
@@ -51,6 +55,8 @@ namespace SimuladorMedia.Formularios
             txtMediaAluno.Clear();
             lbMenssagem.Text = "Menssagem";
             lbMenssagem.Visible = false;
+            txtMediaAluno.Visible = false;
+            label5.Visible = false;
         }
 
         private void FormSimuladorMedia_Load(object sender, EventArgs e)
@@ -136,5 +142,22 @@ namespace SimuladorMedia.Formularios
                 Testo = Testo.Remove(Testo.Length - 1); 
             }
         }
-            }
+
+
+        private void txtNota2_Leave(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void txtMediaAluno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
