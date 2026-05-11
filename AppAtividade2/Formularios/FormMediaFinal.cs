@@ -118,6 +118,10 @@ namespace SimuladorMedia.Formularios
             }
         }
 
+        private void FormMediaFinal_Load(object sender, EventArgs e)
+        {
+
+        }
         private void txtMediaFinalAluno_Leave(object sender, EventArgs e)
         {
             int nota = Convert.ToInt32(txtMediaFinalAluno.Text);

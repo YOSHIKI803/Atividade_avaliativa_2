@@ -157,6 +157,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMediaFinal";
             this.Text = "FormMediaFinal";
+            this.Load += new System.EventHandler(this.FormMediaFinal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

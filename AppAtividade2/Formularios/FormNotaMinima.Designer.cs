@@ -106,6 +106,7 @@
             this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 17;
             this.label2.Text = "Nome do Aluno:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -131,9 +132,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNotaMinima";
             this.Text = "FormNotaMinima";
+            this.Load += new System.EventHandler(this.FormNotaMinima_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
