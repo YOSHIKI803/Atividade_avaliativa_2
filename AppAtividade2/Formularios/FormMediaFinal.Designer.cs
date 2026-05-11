@@ -47,7 +47,7 @@
             this.btNovo.Location = new System.Drawing.Point(246, 255);
             this.btNovo.Name = "btNovo";
             this.btNovo.Size = new System.Drawing.Size(97, 23);
-            this.btNovo.TabIndex = 35;
+            this.btNovo.TabIndex = 36;
             this.btNovo.Text = "NOVO";
             this.btNovo.UseVisualStyleBackColor = false;
             this.btNovo.Click += new System.EventHandler(this.btNovo_Click);
@@ -59,7 +59,7 @@
             this.btCalcular.Location = new System.Drawing.Point(61, 255);
             this.btCalcular.Name = "btCalcular";
             this.btCalcular.Size = new System.Drawing.Size(97, 23);
-            this.btCalcular.TabIndex = 34;
+            this.btCalcular.TabIndex = 35;
             this.btCalcular.Text = "CALCULAR";
             this.btCalcular.UseVisualStyleBackColor = false;
             this.btCalcular.Click += new System.EventHandler(this.btCalcular_Click);
@@ -71,6 +71,7 @@
             this.txtMediaFinalAluno.Size = new System.Drawing.Size(151, 20);
             this.txtMediaFinalAluno.TabIndex = 33;
             this.txtMediaFinalAluno.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMediaFinalAluno_KeyUp);
+            this.txtMediaFinalAluno.Leave += new System.EventHandler(this.txtMediaFinalAluno_Leave);
             // 
             // txtNomeAluno
             // 
@@ -83,7 +84,7 @@
             // 
             this.lbMenssagem.AutoSize = true;
             this.lbMenssagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMenssagem.Location = new System.Drawing.Point(79, 282);
+            this.lbMenssagem.Location = new System.Drawing.Point(27, 290);
             this.lbMenssagem.Name = "lbMenssagem";
             this.lbMenssagem.Size = new System.Drawing.Size(110, 20);
             this.lbMenssagem.TabIndex = 31;
@@ -112,11 +113,11 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 7);
+            this.label1.Location = new System.Drawing.Point(42, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 53);
+            this.label1.Size = new System.Drawing.Size(336, 63);
             this.label1.TabIndex = 28;
-            this.label1.Text = "NOTA MÍNIMA PARA APROVAÇÂO NO EXAME";
+            this.label1.Text = "VERIFICAR A MÉDIA FINAL APÓS NOTA DO EXAME FINAL\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtNotaExame
@@ -124,7 +125,7 @@
             this.txtNotaExame.Location = new System.Drawing.Point(77, 200);
             this.txtNotaExame.Name = "txtNotaExame";
             this.txtNotaExame.Size = new System.Drawing.Size(151, 20);
-            this.txtNotaExame.TabIndex = 37;
+            this.txtNotaExame.TabIndex = 34;
             this.txtNotaExame.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNotaExame_KeyUp);
             // 
             // label3

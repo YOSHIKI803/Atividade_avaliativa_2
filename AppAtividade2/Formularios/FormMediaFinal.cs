@@ -30,7 +30,7 @@ namespace SimuladorMedia.Formularios
 
             if(MAEX >= 50)
             {
-                lbMenssagem.Text = $"{nome}, você foi aprovado(a)";
+                lbMenssagem.Text = $"{nome}, você foi aprovado(a), com {MAEX} pontos";
                 lbMenssagem.Visible = true;
             }
             else
@@ -122,5 +122,18 @@ namespace SimuladorMedia.Formularios
         {
 
         }
+        private void txtMediaFinalAluno_Leave(object sender, EventArgs e)
+        {
+            int nota = Convert.ToInt32(txtMediaFinalAluno.Text);
+            string nome = txtNomeAluno.Text;
+
+            if (nota >= 60)
+            {
+                MessageBox.Show($"O Aluno {nome}, já passou na matéria", "ADS/JIPA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMediaFinalAluno.Clear();
+            }
+        }
+
+     
     }
 }
