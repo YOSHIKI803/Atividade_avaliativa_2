@@ -42,7 +42,7 @@ namespace AppAtividade2.Formularios
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int tipoCalculo = cbTipoCalculo.SelectedIndex;
+            
             double taxa = txtTaxa.Text != "" ? Convert.ToDouble(txtTaxa.Text) / 100 : 0;
             double capital = Convert.ToDouble(txtCapital.Text);
             int tempo = Convert.ToInt32(txtTempo.Text);
